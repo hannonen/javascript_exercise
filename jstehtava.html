@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <h1>Moikka. Tein tähän pieni websivu.</h1>
+    <h1>Moikka. Tein tähän pieni JS tehtävä.</h1>
 
     <nav class="navbar">
       <div class="navbar_container">
@@ -41,9 +41,22 @@
       </div>
     </nav>
 
+    <!-- Tässä on tehty JS script HTML sisällä. -->
+    <script>
+      function text1Function() {
+        document.getElementById("text1js").innerHTML = "Teksti 1 muutui.";
+      }
+    </script>
 
+<p id="text1js">Tässä on joku teksti 1.</p>
+<button type="button" onclick="text1Function()">Click this</button>
 
+    <!-- Tässä eri tavalla tehty JS luokka eri iedostossa. -->
 
+    <p id="text2js">Tässä on joku teksti 2.</p>
 
+    <button type="button" onclick="text2Function()">Click me</button>
+
+    <script src="script.js"></script>
   </body>
 </html>
